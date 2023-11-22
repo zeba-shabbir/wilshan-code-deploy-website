@@ -4,7 +4,7 @@ phases:
   build:
     commands:
     - echo "This is build phase... Zipping my webpage"
- 
+    - zip -r deployment_package.zip lambda_function.py
   post_build:
     commands:
     - echo "Deployed to S3"
